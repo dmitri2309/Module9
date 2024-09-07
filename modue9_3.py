@@ -1,0 +1,17 @@
+first = ['Strings', 'Student', 'Computers']
+second = ['Строка', 'Урбан', 'Компьютер']
+
+zipped = zip(first, second)
+
+
+first_result = (len(x) - len(y) for x, y in list(zipped) if len(x) != len(y))
+second_result = (True if len(first[i]) == len(second[i]) else False for i in range(len(first)))
+
+
+print(list(first_result))
+print(list(second_result))
+
+
+
+
+
